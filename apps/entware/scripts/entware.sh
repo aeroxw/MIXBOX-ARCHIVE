@@ -47,6 +47,8 @@ init() {
 			wget -O - http://bin.entware.net/mipselsf-k3.4/installer/generic.sh | sh
 		elif [ "$model" = "linux_x86_64" ]; then
 			wget -O - http://bin.entware.net/x64-k3.2/installer/generic.sh | sh
+		elif [ "$model" = "linux_aarch64" ]; then
+			wget -O - http://bin.entware.net/aarch64-k3.10/installer/generic.sh | sh
 		else
 			logsh "【Tools】" "不支持你的设备！"
 			end
